@@ -12,7 +12,7 @@ class Calculator {
         if (nums.length > 1) {
             const tempDelimiter = nums.includes(delimiter) ? delimiter : "\n";
 
-            return nums.split(tempDelimiter).reduce((a, b) => a += this.sum(b), 0);
+            return nums.split(tempDelimiter).reduce((a, b) => a += this.sum(b, delimiter), 0);
         }
 
         // let delimiter = ",";
